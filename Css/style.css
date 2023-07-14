@@ -11,10 +11,8 @@ html {
 }
 body {
     background-color: rgb(117, 90, 206);
-    
 }
 .container {
-    /* width: 100%; */
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -23,7 +21,8 @@ body {
     margin-top: 1rem;
     font-size: .5rem;
     text-align: center;
-    width: 100%;
+    width: 80%;
+    align-self: center;
     color: #fff;
     background-color: rgb(77, 52, 158);
     padding: .5rem;
@@ -42,19 +41,13 @@ body {
 .navBar .list {
     display: flex;
     background-color :whitesmoke;
-    
     margin-top: 2rem;
     justify-content: center;
     border-radius: 10px;
-    
     padding: .5rem;
-    
     border-right: 5px solid orange;
-    
     border-top-right-radius: 20px;
-    
     border-bottom-left-radius: 20px;
-    
     border-left: 5px solid rgb(65, 4, 114);
     font-size: .6rem;
 }
@@ -62,11 +55,9 @@ body {
 
 .items {
     display: flex;
-    
     margin: 0 .5rem;
     cursor: pointer;
     border-radius: 2.5px;
-   
     padding: .2rem;
     opacity: .5;
     transition: background-color .4s ease;
@@ -130,7 +121,6 @@ section .selected    {
 .text5 {
     display: none;
 }
-
 @keyframes animate {
     0% {
         opacity : 0;
