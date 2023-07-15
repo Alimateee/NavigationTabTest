@@ -37,6 +37,8 @@ body {
 .navBar {
     width: 100%;
     align-self: center;
+    display: flex;
+    justify-content: center;
 }
 .navBar .list {
     display: flex;
@@ -50,6 +52,7 @@ body {
     border-bottom-left-radius: 20px;
     border-left: 5px solid rgb(65, 4, 114);
     font-size: .6rem;
+    transition-duration: .5s;
 }
 
 
@@ -131,7 +134,59 @@ section .selected    {
         transform: scale(1);
     }
 }
+@media only screen and (max-width : 425px) {
+    .header {
+        width: 75%;
+        margin-left : 2rem;
+        margin-right: 2rem;
+        font-size: .5rem;
+    }
+    .navBar {
+        width: 85%;
+    }
+    .content {
+        width: 90%;
+    }
+    .navBar .list {
+        width: 100%;
+    }
+    .items {
+        margin: .2rem;
+    }
+}
 @media only screen and (min-width : 425px) {
+    .header {
+        width: 60%;
+    }
+    .navBar {
+        width: 90%;
+    }
+    .items {
+        margin: 0 .4rem;
+    }
+    .navBar .list {
+        width: 80%;
+    }
+    .content {
+        width: 75%;
+    }
+}
+@media only screen and (min-width : 768px) {
+    .header {
+        width: 40%;
+    }
+    .navBar .list {
+        width: 50%;
+    }
+    .items {
+        margin: 0 .5rem;
+    }
+    .content {
+        width: 45%;
+        margin-top: .5rem;
+    }
+}
+@media only screen and (min-width : 1024px) {
     .header {
         align-self: center;
         margin-top: 2rem;   
@@ -140,10 +195,11 @@ section .selected    {
         font-size: 100%;
     }
     .navBar {
-        width: 50%;
+        width: 100%;
     }
     .navBar .list {
-        margin-top: 4rem;
+        margin-top: 3rem;
+        margin-bottom: 1rem;
         padding: 1rem;
         border-right: 20px solid orange;
         border-top-right-radius: 40px;
