@@ -173,17 +173,24 @@ section .selected    {
 }
 @media only screen and (min-width : 768px) {
     .header {
-        width: 40%;
+        width: 60%;
+        font-size: 100%;
+        padding: .3rem;
     }
     .navBar .list {
-        width: 50%;
+        width: 70%;
+        font-size: 100%;
     }
     .items {
-        margin: 0 .5rem;
+        margin: 0 .6rem;
     }
     .content {
-        width: 45%;
+        width: 60%;
         margin-top: .5rem;
+        
+    }
+    .text .para {
+        font-size: 1rem;
     }
 }
 @media only screen and (min-width : 1024px) {
@@ -191,7 +198,7 @@ section .selected    {
         align-self: center;
         margin-top: 2rem;   
         padding: 1rem; 
-        width: 40%;
+        width: 50%;
         font-size: 100%;
     }
     .navBar {
@@ -200,22 +207,35 @@ section .selected    {
     .navBar .list {
         margin-top: 3rem;
         margin-bottom: 1rem;
-        padding: 1rem;
+        padding: .5rem;
         border-right: 20px solid orange;
         border-top-right-radius: 40px;
         border-left: 20px solid rgb(65, 4, 114);
         border-bottom-left-radius: 40px;
         font-size: 100%;
+        width: 55%;
+
     }
     .items {
-        margin : 0 2rem;
+        margin : 0 .7rem;
         padding: .4rem;
     }
     .content {
-        width: 50%;
+        width: 55%;
     }
     section .selected  {
          line-height: 2.5rem;
          font-size: 100%;
+    }
+}
+@media only screen and (min-width : 1440px) {
+    .header {
+        width: 35%;
+    }
+    .navBar .list {
+        width: 40%;
+    }
+    .content {
+        width: 40%;
     }
 }
