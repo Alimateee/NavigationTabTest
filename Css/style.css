@@ -1,17 +1,17 @@
-html {
+ html {
     font-family: 'vazirmatn' , serif;
     font-size: 100%;
     overflow-x: hidden;
 }
-
+body {
+    height: 100vh;
+}
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-body {
-    background-color: rgb(117, 90, 206);
-}
+
 .container {
     display: flex;
     justify-content: center;
@@ -238,4 +238,81 @@ section .selected    {
     .content {
         width: 40%;
     }
+}
+
+
+#preloader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(176, 129, 238);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.loader {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    background: linear-gradient(0deg, rgba(255, 61, 0, 0.2) 33%, #ff3d00 100%);
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+  }
+  .loader::after {
+    content: '';  
+    box-sizing: border-box;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #263238;
+  }
+  @keyframes rotation {
+    0% { transform: rotate(0deg) }
+    100% { transform: rotate(360deg)}
+  } 
+  .loader-2 {
+    /* color: #FFF; */
+    color: linear-gradient(0deg, rgba(255, 61, 0, 0.2) 33%, #ff3d00 100%);
+    margin-top: .4rem;
+    display: inline-block;
+    position: relative;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+  }
+  .loader-2::after {
+    content: '';  
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: currentColor;
+    position: absolute;
+    bottom: 10px;
+    right: -5px;
+    box-sizing: border-box;
+    animation: animloader .8s linear infinite;
+  }
+  
+  @keyframes animloader {
+    0% {
+      box-shadow: 10px 0 rgba(255, 255, 255, 0), 20px 0 rgba(255, 255, 255, 0);
+    }
+    50% {
+      box-shadow: 10px 0 white, 20px 0 rgba(255, 255, 255, 0);
+    }
+    100% {
+      box-shadow: 10px 0 white, 20px 0 white;
+    }
+  }
+#content {
+    display: none;
+    background-color: rgb(117, 90, 206);
+    height : 100vh;
 }
