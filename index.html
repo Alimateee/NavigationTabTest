@@ -52,8 +52,10 @@
         document.addEventListener("DOMContentLoaded" , () => {
             let preloader = document.getElementById('preloader');
             let content = document.getElementById('content')
-            preloader.style.display = 'none';
-            content.style.display = 'block';
+            setTimeout(() => {
+                preloader.style.display = 'none';
+                content.style.display = 'block';
+            } , 4000)
         })
     </script>
 </body>
