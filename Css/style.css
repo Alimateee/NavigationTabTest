@@ -242,14 +242,15 @@ section .selected    {
     position: fixed;
     width: 100%;
     height: 100%;
-    background-color: rgb(176, 129, 238);
+    /* background-color: rgb(176, 129, 238); */
+    background-color: rgb(117, 90, 206);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 .loader {
-    color: #3c3c3c;
+    color: #faf4f4;
     position: relative;
     display: inline-block;
     margin-top: 40px;
@@ -277,7 +278,7 @@ section .selected    {
     left: 125px;
     top: 2px;
     border-radius: 50%;
-    background: red;
+    background: aqua;
     box-sizing: border-box;
     animation: animloader 1s linear infinite alternate;
   }
@@ -323,4 +324,5 @@ section .selected    {
 #content {
     display: none;
     background-color: rgb(117, 90, 206);
+    height: 100vh;
 }
