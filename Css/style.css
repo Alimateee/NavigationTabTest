@@ -249,7 +249,7 @@ section .selected    {
     flex-direction: column;
 }
 .loader {
-    color: #FFF;
+    color: #3c3c3c;
     position: relative;
     display: inline-block;
     margin-top: 40px;
